@@ -1,17 +1,23 @@
 # Stock Trading Bot
+[![Star this repo](https://img.shields.io/github/stars/codingforentrepreneurs/Stock-Trading-Bot?style=social)](https://github.com/Abhay-Kanwasi/Stock_Trading_Bot)
 
 Learn how to extract data, analyze, and decide on stocks in the market using Django, Celery, TimescaleDB, Jupyter, OpenAI, and more.
 
+Thanks to [Timescale](https://kirr.co/eedxyv) for partnering with me on this tutorial.
+
 
 __Tech Stack__
-- [Python 3.10](https://github.com/python)
+- [Python 3.12](https://github.com/python)
 - [Django](https://github.com/django/django) (`pip install "Django>=5.1,<5.2"`)
+- [TimescaleDB Cloud](https://tsdb.co/justin) (or Docker version)
 - [Django Timescaledb](https://github.com/jamessewell/django-timescaledb) (`pip install django-timescaledb`)
 - [Python requests](https://github.com/psf/requests) (`pip install requests`)
 - [Jupyter](https://jupyter.org/) (`pip install jupyter`)
 - [Psycopg Binary Release](https://pypi.org/project/psycopg/) (`pip install "psycopg[binary]"`)
-- [Python Requests](https://github.com/HBNetwork/python-decouple) to load environment variables (e.g. `.env`) with type casting and default values.
+- [Python Decouple](https://github.com/HBNetwork/python-decouple) to load environment variables (e.g. `.env`) with type casting and default values.
 - [Polygon.io](https://polygon.io/?utm_source=cfe&utm_medium=github&utm_campaign=cfe-github) ([docs](https://polygon.io/docs/stocks/getting-started?utm_source=cfe&utm_medium=github&utm_campaign=cfe-github))
+- [Alpha Vantage]( https://www.alphavantage.co/?utm_source=cfe&utm_medium=github&utm_campaign=cfe-github) ([docs](https://www.alphavantage.co/documentation/?utm_source=cfe&utm_medium=github&utm_campaign=cfe-github))
+- [OpenAI]( https://www.openai.com/?utm_source=cfe&utm_medium=github&utm_campaign=cfe-github)
 
 
 ## Getting Started
@@ -33,7 +39,7 @@ git clone https://github.com/Abhay-Kanwasi/Stock_Trading_Bot.git
 
 Checkout the start branch
 ```bash
-git checkout main
+git checkout start
 rm -rf .git
 git init
 git add --all
@@ -75,3 +81,5 @@ Add `DATABASE_URL` and `REDIS_URL` to `.env` (these are based on the `compose.ya
 DATABASE_URL="postgresql://postgres:postgres@localhost:5431/postgres"
 REDIS_URL="redis://localhost:6378"
 ```
+
+

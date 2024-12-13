@@ -8,7 +8,7 @@ REPO_DIR = NBS_DIR.parent
 DJANGO_BASE_DIR = REPO_DIR / "src"
 
 
-def init_django(project_name='project'):
+def init_django(project_name='cfehome'):
     """Run administrative tasks."""
     os.chdir(DJANGO_BASE_DIR)
     sys.path.insert(0, str(DJANGO_BASE_DIR))
